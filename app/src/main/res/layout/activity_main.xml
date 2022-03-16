@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/breathe" />
+
+    <TextView
+        android:id="@+id/breathtakentxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp"
+        android:text="7 breaths"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lastbreathtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/breathtakentxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:text="Last at 11:45 PM"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/todayminutestxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breathtakentxt"
+        android:layout_alignStart="@+id/breathtakentxt"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="4 minutes today"
+        android:textColor="@color/purple_200"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/purple_200"
+        android:text="START" />
+
+    <TextView
+        android:id="@+id/guidetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flower"
+        android:layout_alignStart="@+id/flower"
+        android:layout_alignEnd="@+id/flower"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Breathe"
+        android:textColor="@color/purple_200"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>
